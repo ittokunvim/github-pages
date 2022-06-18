@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>マルチメディアと埋め込み技術</title>
+	<link rel="shortcut icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<div class="page-background">
+		<header>
+			<div class="flex-header">
+				<img src="../images/logo.svg" alt="このページのロゴ" width="80" height="80">
+				<h1>マルチメディアと埋め込み</h1>
+			</div>
+		</header>
+
+		<main>
+			<div class="container">
+				<figure>
+					<img src="sosoritatu-neko-1600x2133.jpg" alt="そそり立つ猫" width="400" height="600">
+					<figcaption>そそり立つ、、、Neko !!!</figcaption>
+				</figure>
+
+				<hr>
+
+				<p>
+					下のところを押すと、ローカルにある動画ファイルを再生します<br>
+					また字幕も用意しています。
+				</p>
+				<video width="400" controls>
+					<source src="countdown-2000-in-japan.mp4" type="video/mp4">
+					<track label="japan" kind="subtitles" src="countdown-2000-in-japan.vtt" srclang="ja" default>
+					<p>
+						お使いのブラウザは HTML5 動画をサポートしていません。その代わりに<a href="countdown-2000-in-japan.mp4">動画へのリンク</a>があります。
+					</p>
+				</video>
+
+				<p>下のところを押すと、ローカルにある音声ファイルを再生します</p>
+				<audio controls style="display: block;">
+					<source src="outfoxing-the-fox.mp3" type="audio/mp3">
+					<p>
+						お使いのブラウザはHTML5音声をサポートしていません。その代わりに<a href="outfoxing-the-fox.mp3">音声のリンク</a>があります。
+					</p>
+				</audio>
+
+				<hr>
+
+				<p>Youtubeの埋め込みです。下のかわいいにゃんこをクリックすると動画が再生されます🐱</p>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/QH2-TGUlwu4"
+					title="YouTube video player" frameborder="0"
+					allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+					allowfullscreen>
+					<p>このブラウザはiframeには対応しておりません。</p>
+				</iframe>
+
+				<p>
+					iframe要素に適当なウェブサイトのURLをブラウザで読み込むとこうなる<br>
+					こうなる理由としてセキュリティが関係している
+				</p>
+				<iframe src="https://www.google.com" frameborder="0">
+					<p>このブラウザはiframeには対応しておりません。</p>
+				</iframe>
+
+				<p>
+					<abbr title="Scalable Vector Graphics">SVG</abbr>を定義する3つの方法
+				</p>
+				<img src="../images/logo.svg" alt="このページのロゴ" width="100px" />
+				<svg width="300" height="200">
+					<rect width="100%" height="100%" fill="green" />
+				</svg>
+				<iframe src="../images/logo.svg" width="500px" height="500px" sandbox style="display: block;">
+					<img src=" ../images/logo-128.png" alt="3つの不等辺の三角形" width="100" height="100">
+				</iframe>
+			</div>
+		</main>
+
+		<div class="spacer">
+			<hr>
+		</div>
+
+		<footer>
+			<div style="background-color: gray;">
+				<p>copyright by ittoku703</p>
+			</div>
+		</footer>
+	</div>
+</body>
+
+</html>
