@@ -1,32 +1,86 @@
-<!DOCTYPE html>
-<html lang="ja">
+ <!DOCTYPE html>
+ <html lang="ja">
+	<head>
+		<meta charset="UTF-8">
+		<title>ittoku703のポートフォリオ</title>
+		<!-- initialize CSS -->
+		<link href="https://cdn.jsdelivr.net/npm/normalize.css@8.0.1/normalize.css" rel="stylesheet">
+		<!-- header font -->
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Dela+Gothic+One&family=Roboto&display=swap" rel="stylesheet">
+		<!-- my CSS -->
+		<link href="style.css" rel="stylesheet">
+	</head>
 
-<head>
-	<meta charset="UTF-8">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>ittoku703のポートフォリオサイト</title>
-	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" href="style.css">
-</head>
+	<body>
+		<header class="page__header">
+			<ul class="page__header__list">
+				<li>
+					<a href="/" title="home">
+						<img src="./images/logo-128.png" alt="logo">
+					</a>
+				</li>
+				<li>
+					<h1>ittoku703のポートフォリオ</h1>
+				</li>
+			</ul>
+		</header>
+		<main class="page__main">
+			<div class="page__main__article__wrap">
+				<article>
+					<h2>自己紹介</h2>
 
-<body>
-	<h1>ittoku703のポートフォリオサイト</h1>
+					<p>
+					こんにちは。ittoku703です。趣味は、アニメ鑑賞、ゲーム（<a href="https://clashofclans.com/">Clash of Clan</a>）、ウェブ開発です。
+					<br>
+					<br>
+					このサイトは、現在勉強中のフロントエンド開発で学んだ内容をアウトプットしています。
+					<br>
+					<br>
+					もしよろしければ見てください！
+					</p>
 
-	<p>
-		このサイトでは私のフロントエンドの勉強したことをアウトプットするサイトとして使用しています。<br>
-		そしてこのサイトはGithub pagesの機能を使って公開しています（凄い！）。<br>
-	</p>
+					<hr>
 
-	<ul>
-		<li>
-			<a href="introduction_to_HTML">HTML入門</a>
-		</li>
-		<li>
-			<a href="multimedia_and_embedding">マルチメディアと埋め込み</a>
-		</li>
-	</ul>
-	<script src="script.js"></script>
-</body>
+					<h2>ポートフォリオ</h2>
 
+					<ul>
+						<li>
+							<a href="./structuring_a_page_of_content/index.html">バードウォッチング</a>
+						</li>
+						<li>
+							<a href="./mozilla_splash_page/index.html">mozillaスプラッシュページ</a>
+						</li>
+						<li>
+							<a href="./structuring_planet_data/index.html">惑星データ</a>
+						</li>
+						<li>
+							<a href="./styling_a_biography_page/index.html">記事のフォーマット</a>
+						</li>
+						<li>
+							<a href="./Fundamental_CSS_comprehension/index.html">IDカード</a>
+						</li>
+						<li>
+							<a href="./Creating_fancy_letterheaded_paper/index.html">ファンシーな手紙</a>
+						</li>
+						<li>
+							<a href="./A_cool_looking_box/index.html">かっこいいボタン</a>
+						</li>
+					</ul>
+				</article>
+			</div>
+		</main>
+		<footer class="page__footer">
+			<ul class="page__footer__list">
+				<li>
+					<a href="https://github.com/ittoku703/portfolio">ソースコード</a>
+				</li>
+				<li>
+					<span>Copyright ittoku703</span>
+				</li>
+			</ul>
+		</footer>
+	</body>
 </html>
+
