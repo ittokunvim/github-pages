@@ -1,7 +1,10 @@
-const pElem = document.createElement('p');
-const body = document.querySelector('body');
+/*
+const overviews = document.getElementById('overviews');
 
-pElem.textContent = "My name is ittoku703!";
-pElem.style.color = "green";
+remove overviews
+while (overviews.lastChild) {
+  overviews.removeChild(overviews.lastChild);
+}
 
-body.appendChild(pElem);
+console.log(overviews)
+*/
