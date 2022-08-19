@@ -10,145 +10,166 @@
 	<title>ittoku-ky73 | Portfolio</title>
 	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
 	<link rel="apple-touch-icon" href="icon.png">
-	<!-- Bootstrap -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+	<!-- normalize CSS -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<link rel="stylesheet" href="style.css" type="text/css">
 </head>
 
 <body>
-	<div class="page__wrapper">
-		<header>
+	<header class="page__header">
+		<div class="page__header__logo">
+			<a href="./index.html" title="homepage">
+				<img src="icon.png" alt="logo">
+			</a>
+		</div>
+		<div class="page__header__links">
+			<ul>
+				<li>Menu A</li>
+				<li>Menu B</li>
+				<li>Menu C</li>
+				<li>Menu D</li>
+			</ul>
+		</div>
+		<div class="page__header__btn">
+			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
+				<path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+			</svg>
+		</div>
+	</header>
+	<div class="page__main__wrapper">
+		<nav class="page__nav">
 			<div>
-				<a href="./index.html" title="homepage">
-					<img src="icon.png" alt="logo">
-				</a>
-			</div>
-			<div>
+				<h2>Portfolio</h2>
 				<ul>
-					<li>Menu A</li>
-					<li>Menu B</li>
-					<li>Menu C</li>
-					<li>Menu D</li>
-				</ul>
-			</div>
-			<div>
-				<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" viewBox="0 0 16 16">
-					<path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
-				</svg>
-			</div>
-		</header>
-		<nav>
-			<div>
-				<ul>
 					<li>
-						<a href="./structuring_a_page_of_content/index.html" target="_blank">バードウォッチング</a>
+						<a href="./structuring_a_page_of_content/index.html">バードウォッチング</a>
 					</li>
 					<li>
-						<a href="./mozilla_splash_page/index.html" target="_blank">mozillaスプラッシュページ</a>
+						<a href="./mozilla_splash_page/index.html">mozillaスプラッシュページ</a>
 					</li>
 					<li>
-						<a href="./structuring_planet_data/index.html" target="_blank">惑星データ</a>
+						<a href="./structuring_planet_data/index.html">惑星データ</a>
 					</li>
 					<li>
-						<a href="./styling_a_biography_page/index.html" target="_blank">記事のフォーマット</a>
+						<a href="./styling_a_biography_page/index.html">記事のフォーマット</a>
 					</li>
 					<li>
-						<a href="./Fundamental_CSS_comprehension/index.html" target="_blank">IDカード</a>
+						<a href="./Fundamental_CSS_comprehension/index.html">IDカード</a>
 					</li>
 					<li>
-						<a href="./Creating_fancy_letterheaded_paper/index.html" target="_blank">ファンシーな手紙</a>
+						<a href="./Creating_fancy_letterheaded_paper/index.html">ファンシーな手紙</a>
 					</li>
 					<li>
-						<a href="./A_cool_looking_box/index.html" target="_blank">かっこいいボタン</a>
+						<a href="./A_cool_looking_box/index.html">かっこいいボタン</a>
 					</li>
 				</ul>
 			</div>
 		</nav>
-		<main>
-			<h1>Overviews</h1>
-			<div id="overviews">
+		<main class="page__main">
+			<h2>Overviews</h2>
+			<div id="overviews" class="page__main__overviews">
 				<div>
-					<a href="./structuring_a_page_of_content/index.html">
-						<img src="./structuring_a_page_of_content/site.png" alt="Birdwatching image" style="width: 400px;">
-					</a>
-					<h2>Birdwatching</h2>
+					<h3>Birdwatching</h3>
+					<div class="page__main__overviews__image">
+						<a href="./structuring_a_page_of_content/index.html">
+							<img src="./structuring_a_page_of_content/site.png" alt="Birdwatching image">
+						</a>
+						<span>ページを見る</span>
+					</div>
 					<p>これはバードウオッチングのページです。緑色が鮮やかですね。</p>
 					<p><a href="https://github.com/ittoku-ky73/leaning-frontend/blob/main/html/Introduction_to_HTML/structuring_a_page_of_content/">ソースコード</a>はこちら</p>
 				</div>
 				<div>
-					<a href="./mozilla_splash_page/index.html">
-						<img src="./mozilla_splash_page/site.png" alt="Birdwatching image" style="width: 400px;">
-					</a>
-					<h2>mozillaスプラッシュページ</h2>
+					<h3>mozillaスプラッシュページ</h3>
+					<div class="page__main__overviews__image">
+						<a href="./mozilla_splash_page/index.html">
+							<img src="./mozilla_splash_page/site.png" alt="Mozilla splash page image">
+						</a>
+						<span>ページを見る</span>
+					</div>
 					<p>これはmozillaを紹介しているページです。画像がかっこいいですね。</p>
 					<p><a href="https://github.com/ittoku-ky73/leaning-frontend/tree/main/html/Multimedia_and_embedding/mozilla_splash_page/">ソースコード</a>はこちら</p>
 				</div>
 				<div>
-					<a href="./structuring_planet_data/index.html">
-						<img src="./structuring_planet_data/site.png" alt="Birdwatching image" style="width: 400px;">
-					</a>
-					<h2>惑星データ</h2>
+					<h3>惑星データ</h3>
+					<div class="page__main__overviews__image">
+						<a href="./structuring_planet_data/index.html">
+							<img src="./structuring_planet_data/site.png" alt="Planet data image">
+						</a>
+						<span>ページを見る</span>
+					</div>
 					<p>これは太陽系の惑星のデータが書かれたページです。宇宙のことは分かりませんがなんかいいですね。</p>
 					<p><a href="https://github.com/ittoku-ky73/leaning-frontend/tree/main/html/Tables/structuring_planet_data">ソースコード</a>はこちら</p>
 				</div>
 				<div>
-					<a href="./styling_a_biography_page/index.html">
-						<img src="./styling_a_biography_page/site.png" alt="Birdwatching image" style="width: 400px;">
-					</a>
-					<h2>記事のフォーマット</h2>
+					<h3>記事のフォーマット</h3>
+					<div class="page__main__overviews__image">
+						<a href="./styling_a_biography_page/index.html">
+							<img src="./styling_a_biography_page/site.png" alt="Jane Doe letter image">
+						</a>
+						<span>ページを見る</span>
+					</div>
 					<p>これはJane DoeがWeb Developerに向けて書いた記事です。ピンクと紫色の相性は合いますね。</p>
 					<p><a href="https://github.com/ittoku-ky73/leaning-frontend/tree/main/css/First_steps/styling_a_biography_page">ソースコード</a>はこちら</p>
 				</div>
 				<div>
-					<a href="./Fundamental_CSS_comprehension/index.html">
-						<img src="./Fundamental_CSS_comprehension/site.png" alt="Birdwatching image" style="width: 400px;">
-					</a>
-					<h2>IDカード</h2>
+					<h3>IDカード</h3>
+					<div class="page__main__overviews__image">
+						<a href="./Fundamental_CSS_comprehension/index.html">
+							<img src="./Fundamental_CSS_comprehension/site.png" alt="ID card">
+						</a>
+						<span>ページを見る</span>
+					</div>
 					<p>これはIDカードです。これを印刷すれば首に下げるタイプのカードになりそうです。</p>
 					<p><a href="https://github.com/ittoku-ky73/leaning-frontend/tree/main/css/Building_blocks/Fundamental_CSS_comprehension">ソースコード</a>はこちら</p>
 				</div>
 				<div>
-					<a href="./Creating_fancy_letterheaded_paper/index.html">
-						<img src="./Creating_fancy_letterheaded_paper/site.png" alt="Birdwatching image" style="width: 400px;">
-					</a>
-					<h2>ファンシーな手紙</h2>
+					<h3>ファンシーな手紙</h3>
+					<div class="page__main__overviews__image">
+						<a href="./Creating_fancy_letterheaded_paper/index.html">
+							<img src="./Creating_fancy_letterheaded_paper/site.png" alt="Fancy letter">
+						</a>
+						<span>ページを見る</span>
+					</div>
 					<p>これは手紙を書く便箋です。それなりにおしゃれですね。</p>
 					<p><a href="https://github.com/ittoku-ky73/leaning-frontend/tree/main/css/Building_blocks/Creating_fancy_letterheaded_paper">ソースコード</a>はこちら</p>
 				</div>
 				<div>
-					<a href="./A_cool_looking_box/index.html">
-						<img src="./A_cool_looking_box/site.png" alt="Birdwatching image" style="width: 400px;">
-					</a>
-					<h2>かっこいいボタン</h2>
+					<h3>かっこいいボタン</h3>
+					<div class="page__main__overviews__image">
+						<a href="./A_cool_looking_box/index.html">
+							<img src="./A_cool_looking_box/site.png" alt="Cool box">
+						</a>
+						<span>ページを見る</span>
+					</div>
 					<p>これは赤いボタンです。かっこいいボタンとは思いません。</p>
 					<p><a href="https://github.com/ittoku-ky73/leaning-frontend/tree/main/css/Building_blocks/A_cool_looking_box">ソースコード</a>はこちら</p>
 				</div>
 			</div>
 		</main>
-		<footer>
-			<div>
-				<div>
-					<h2>SNS</h2>
-					<ul>
-						<li><a href="https://github.com/ittoku-ky73" target="_blank">Github</a></li>
-						<li><a href="https://crowdworks.jp/public/employees/4852074" target="_blank">Crowdworks</a></li>
-					</ul>
-				</div>
-				<div>
-					<h2>Tecnology</h2>
-					<ul>
-						<li>HTML, CSS, Vanilla JavaScript</li>
-						<li>BootStrap (CSS Framework)</li>
-						<li>Github Pages (Infra)</li>
-						<li>Pixlr (Image)</li>
-					</ul>
-				</div>
-				<div>
-					<p>2022 ittoku-ky73. All Right Reserved.</p>
-				</div>
-			</div>
-		</footer>
 	</div>
+	<footer class="page__footer">
+		<div class="page__footer__sns">
+			<h3>SNS</h3>
+			<ul>
+				<li><a href="https://github.com/ittoku-ky73">Github</a></li>
+				<li><a href="https://crowdworks.jp/public/employees/4852074">Crowdworks</a></li>
+			</ul>
+		</div>
+		<div class="page__footer__technology">
+			<h3>Technology</h3>
+			<ul>
+				<li>HTML</li>
+				<li>CSS</li>
+				<li>JavaScript</li>
+				<li>Github Pages (Infra)</li>
+				<li>Pixlr (Image)</li>
+			</ul>
+		</div>
+		<div class="page__footer__copyright">
+			<p>©️ 2022 ittoku-ky73. All Right Reserved.</p>
+		</div>
+	</footer>
 	<script src="script.js"></script>
 </body>
 
