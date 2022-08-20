@@ -60,11 +60,6 @@ a[href*="https"]::after {
 .page__header__logo img {
 	width: 64px;
 	background-color: inherit;
-	transition: .5s ease;
-}
-
-.page__header__logo img:hover {
-	opacity: 0.5;
 }
 
 .page__header ul {
@@ -132,41 +127,40 @@ a[href*="https"]::after {
 	text-align: center;
 }
 
+/* main contents overview */
 .page__main__overviews {
+	font-size: 16px;
 	display: flex;
 	flex-direction: column;
-	gap: 1rem;
+	gap: 1em;
 }
 
-/* main contents overview */
-.page__main__overviews>div {
-	display: flex;
-	flex-direction: column;
-	gap: 0.5rem;
-	padding-bottom: 1rem;
+.page__main__overviews__overview-wrap {
 	border-bottom: 1px solid var(--color-border);
 }
 
-.page__main__overviews h3,
-.page__main__overviews p {
-	margin: 0;
-}
-
-.page__main__overviews h3 {
-	font-size: 1.2rem;
+.page__main__overviews__overview {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.5em;
+	background-color: white;
+	margin-bottom: 1em;
 }
 
 /* overview image */
-.page__main__overviews__image {
+.page__main__overviews__overview__image {
 	transition: .5s ease;
 	position: relative;
+	text-align: center;
 }
 
-.page__main__overviews__image img {
+.page__main__overviews__overview__image img {
 	max-width: 100%;
+	max-height: 200px;
+	vertical-align: top;
 }
 
-.page__main__overviews__image span {
+.page__main__overviews__overview__image span {
 	/* animation */
 	transition: .5s ease;
 	opacity: 0;
@@ -176,13 +170,34 @@ a[href*="https"]::after {
 	transform: translate(-50%, -50%);
 	text-align: center;
 	/* font */
-	font-size: 3rem;
+	font-size: 1.5em;
 	color: var(--color-text-img);
 }
 
-.page__main__overviews__image:hover,
-.page__main__overviews__image:hover span {
+.page__main__overviews__overview__image:hover,
+.page__main__overviews__overview__image:hover span {
 	opacity: 0.8;
+}
+
+/* overview paragraph */
+.page__main__overviews__overview__paragraph {
+	display: flex;
+	flex-direction: column;
+	gap: 0.8em;
+	margin-top: 0.5em;
+}
+
+.page__main__overviews__overview__paragraph h3,
+.page__main__overviews__overview__paragraph p {
+	margin: 0;
+}
+
+.page__main__overviews__overview__paragraph p {
+	font-size: 0.8em;
+}
+
+.page__main__overviews__overview__paragraph a {
+	font-size: 1em;
 }
 
 /* page footer */
