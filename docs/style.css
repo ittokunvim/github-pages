@@ -1,11 +1,12 @@
 :root {
-	--color-bg-body: #eee;
-	--color-bg-header: #f82;
-	--color-bg-nav: #fff;
-	--color-text-link-default: #444;
-	--color-text-link-hover: #44f;
-	--color-text-img: #000;
-	--color-border: #bbb;
+	--color-bg-body: #f4f4f4;
+	--color-bg-header: #fbfbfb;
+	--color-bg-nav: #fbfbfb;
+	--color-bg-footer: #fbfbfb;
+	--color-text-link-default: #3f3f3f;
+	--color-text-link-hover: #0000ff;
+	--color-text-img: #4f4f4f;
+	--color-border: #bfbfbf;
 }
 
 /* general */
@@ -35,11 +36,11 @@ a:active {
 a[href*="https"]::after {
 	content: '';
 	position: relative;
-	top: 0.2rem;
-	left: 0.2rem;
-	padding-left: 1.2rem;
+	top: 0.2em;
+	left: 0.2em;
+	padding-left: 1.2em;
 	background-image: url(./external-link.svg);
-	background-size: 0.8rem;
+	background-size: 0.8em;
 	background-repeat: no-repeat;
 }
 
@@ -91,6 +92,7 @@ a[href*="https"]::after {
 }
 
 .page__nav h2 {
+	font-size: 1.2rem;
 	margin: 0;
 }
 
@@ -122,7 +124,7 @@ a[href*="https"]::after {
 }
 
 .page__main h2 {
-	font-size: 1.5rem;
+	font-size: 1.2rem;
 	margin: 0;
 	text-align: center;
 }
@@ -204,10 +206,6 @@ a[href*="https"]::after {
 	font-size: 0.8em;
 }
 
-.page__main__overviews__overview__paragraph a {
-	font-size: 1rem;
-}
-
 /* page footer */
 .page__footer {
 	display: grid;
@@ -218,6 +216,7 @@ a[href*="https"]::after {
 	gap: 1rem;
 	padding: 0 1rem;
 	border-top: 1px solid var(--color-border);
+	background-color: var(--color-bg-footer);
 }
 
 .page__footer ul {
@@ -278,7 +277,7 @@ a[href*="https"]::after {
 	}
 
 	.page__nav {
-		background-color: white;
+		background-color: var(--color-bg-nav);
 		border-right: 1px solid var(--color-border);
 		padding: 1rem;
 	}
